@@ -17,14 +17,14 @@ html {
 
 .login {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .form-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 90%;
   text-align: center;
-  padding-top: 160px;
+  padding-top: 200px;
 }
 
 .logo {
@@ -43,4 +43,47 @@ html {
   font-size: 1.6rem;
   font-weight: 300;
   color: var(--very-light-pink);
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  text-align: left;
+  align-items: center;
+}
+
+.form .label {
+  text-align: left;
+  margin-bottom: 4px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.form .input-password {
+  height: 42px;
+  width: 300px;
+  padding: 6px;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--text-input-field);
+}
+
+.form .login-button {
+  height: 50px;
+  width: 300px;
+  padding: 1px 4px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 8px;
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--hospital-green);
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
 }
